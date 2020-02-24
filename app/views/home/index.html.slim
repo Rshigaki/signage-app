@@ -1,4 +1,6 @@
-h1
-  | Home#index
 p
-  | Find me in app/views/home/index.html.erb
+  = link_to 'サイネージを起動する', signage_index_path
+p
+  = link_to '管理画面に移動する', admin_page_index_path
+p
+  = link_to 'ログアウト', destroy_user_session_path
